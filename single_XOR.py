@@ -1,4 +1,4 @@
-from XOR import bxor
+from XOR import xor
 from binascii import hexlify, unhexlify
 
 
@@ -13,7 +13,7 @@ def attack_single_byte_xor(ciphertext):
         candidate_key = i.to_bytes(1, byteorder='big')
         # the byte string we will XOR the message against is usually called the "keystream"
         keystream = candidate_key*len(ciphertext)
-        candidate_message = bxor(ciphertext, keystream)
+        candidate_message = xor(ciphertext, keystream)
         ascii_text_chars = list(range(97, 122)) + [32]
         nb_letters = sum([ x in ascii_text_chars for x in candidate_message])
         # if the obtained message has more letters than any other candidate before
