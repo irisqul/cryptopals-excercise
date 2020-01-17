@@ -1,5 +1,5 @@
-from XOR import xor
-from binascii import hexlify, unhexlify
+from set1.XOR import xor
+from binascii import unhexlify
 
 class InvalidMessageException(Exception):
     pass

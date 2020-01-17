@@ -1,6 +1,6 @@
-from XOR import xor
-from base64 import b64encode, b64decode
-from find_single_XOR import attack_single_byte_xor
+from set1.XOR import xor
+from base64 import b64decode
+from set1.find_single_XOR import attack_single_byte_xor
 
 def hamming_distance(a, b):
     #humming distance is between two strings of equal length is the number of positions at which the corresponding

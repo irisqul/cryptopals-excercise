@@ -1,5 +1,5 @@
-from XOR import xor
-from binascii import hexlify, unhexlify
+from set1.XOR import xor
+from binascii import hexlify
 
 #bites from message
 message = b"Burning 'em, if you ain't quick and nimble\nI go crazy when I hear a cymbal"
