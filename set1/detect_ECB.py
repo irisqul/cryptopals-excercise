@@ -1,8 +1,8 @@
 from binascii import hexlify, unhexlify
 from base64 import b64encode, b64decode
 
-with open('ciphered_8') as f:
-    ctxts = [unhexlify(line.strip()) for line in f]
+# with open(ciphered_8) as f:
+#     ctxts = [unhexlify(line.strip()) for line in f]
 
 
 def has_repeated_blocks(ctxt, blocksize=16):
@@ -20,6 +20,6 @@ def has_repeated_blocks(ctxt, blocksize=16):
         return False
 
 
-hits = [ctxt for ctxt in ctxts if has_repeated_blocks(ctxt)]
-print(hits)
+# hits = [ctxt for ctxt in ctxts if has_repeated_blocks(ctxt)]
+# print(hits)
 
